@@ -2,6 +2,12 @@ import datetime
 import unittest
 import os
 
+#Sites where research was carried out for completion.
+
+#https://stackoverflow.com/questions/48959098/how-to-create-a-new-text-file-using-python
+#https://stackoverflow.com/questions/7588511/format-a-datetime-into-a-string-with-milliseconds
+#https://www.analyticsvidhya.com/blog/2024/01/all-about-python-strftime-function/
+
 def log_message(file_name, message, level):
     date = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     entry = f"[{date}] [{level}] {message}\n"
@@ -58,9 +64,3 @@ class TestLogMessage(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-
-#Sites where research was carried out for completion.
-
-#https://stackoverflow.com/questions/48959098/how-to-create-a-new-text-file-using-python
-#https://stackoverflow.com/questions/7588511/format-a-datetime-into-a-string-with-milliseconds
-#https://www.analyticsvidhya.com/blog/2024/01/all-about-python-strftime-function/
